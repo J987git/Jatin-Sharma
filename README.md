@@ -1,4 +1,4 @@
-# Telecom Customer Churn Analysis 📉
+# Telecom Customer Churn Analysis 
 
 ##  Objective
 Analyze customer churn behavior to identify key reasons and build a churn prediction model.
