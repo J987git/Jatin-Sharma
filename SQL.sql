@@ -11,7 +11,7 @@ SELECT
     SUM(od.Amount) AS TotalOrderValue
 FROM orderdetails_clean od
 GROUP BY od.`Order ID`;
-Output
+### **Output:**
 Order ID, TotalOrderValue
 B-25601	1429
 B-25602	3889
