@@ -1,4 +1,4 @@
-Sales Database Analysis Project
+**Sales Database Analysis Project**
 Overview
 This project involves performing SQL-based analysis on a sales database. The analysis covers various aspects of the sales data, such as total sales per order, total sales by city, top customers by total spending, and the top-selling categories. The project utilizes the following SQL operations:
 
