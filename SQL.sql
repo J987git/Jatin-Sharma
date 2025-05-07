@@ -11,6 +11,23 @@ SELECT
     SUM(od.Amount) AS TotalOrderValue
 FROM orderdetails_clean od
 GROUP BY od.`Order ID`;
+### **Output**
+
+B-25601	1429
+B-25602	3889
+B-25603	2025
+B-25604	222
+B-25605	75
+B-25606	87
+B-25607	50
+B-25608	2953
+
+
+
+
+
+
+
 -- Total Sales per City
 SELECT 
     lo.City,
