@@ -28,27 +28,13 @@ SELECT
 FROM listoforders_clean lo
 JOIN orderdetails_clean od ON lo.`Order ID` = od.`Order ID`
 GROUP BY lo.City;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Output
+ City, TotalSales
+'Ahmedabad', '14230'
+'Pune', '33481'
+'Bhopal', '23583'
+'Jaipur', '10076'
+'Kolkata', '14086'
 -- Top 5 Customers by Total Spending
 SELECT 
     lo.CustomerName,
