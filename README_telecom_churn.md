@@ -1,24 +1,24 @@
 
 # **Telecom Customer Churn Analysis**
 
-## **📊 Overview**
+## ** Overview**
 
 This project focuses on analyzing customer churn in a telecom company. Churn refers to customers who leave the company's services. By examining historical customer data, we aim to uncover patterns, key factors driving churn, and provide actionable insights for retention strategies.
 
-## **📁 Project Structure**
+## ** Project Structure**
 
 - `churn_data.csv` - The dataset containing customer records.
 - `telecom_churn_analysis.ipynb` - The Jupyter notebook containing the full EDA and modeling.
 - `README.md` - Project documentation.
 
-## **📌 Objectives**
+## ** Objectives**
 
 - Identify the percentage of customers who have churned.
 - Analyze the influence of demographic and service-related features on churn.
 - Visualize trends and insights.
 - Build a predictive model (optional) to classify churn.
 
-## **🧾 Key Analysis Performed**
+## ** Key Analysis Performed**
 
 1. **Exploratory Data Analysis (EDA):**
    - Distribution of churned vs. retained customers
@@ -40,7 +40,7 @@ This project focuses on analyzing customer churn in a telecom company. Churn ref
    - Decision Tree / Random Forest
    - Evaluation using Accuracy, Precision, Recall, and Confusion Matrix
 
-## **📌 Sample Code Snippet**
+## ** Sample Code Snippet**
 ```python
 # Example: Checking churn distribution
 import seaborn as sns
@@ -49,7 +49,7 @@ sns.countplot(x='Churn', data=df)
 
 ---
 
-## **📈 Insights**
+## ** Insights**
 
 - Customers with month-to-month contracts are more likely to churn.
 - Tenure is negatively correlated with churn — new customers churn more.
@@ -57,7 +57,7 @@ sns.countplot(x='Churn', data=df)
 
 ---
 
-## **🛠 Tools & Technologies**
+## **Tools & Technologies**
 
 - Python (Pandas, NumPy, Seaborn, Matplotlib)
 - Jupyter Notebook
@@ -65,7 +65,7 @@ sns.countplot(x='Churn', data=df)
 
 ---
 
-## **📬 Future Improvements**
+## ** Future Improvements**
 
 - Feature engineering with interaction terms
 - Customer segmentation using clustering
@@ -84,6 +84,6 @@ sns.countplot(x='Churn', data=df)
 
 ---
 
-## **📃 License**
+## ** License**
 
 This project is open source and free to use under the MIT License.
