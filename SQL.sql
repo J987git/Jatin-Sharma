@@ -11,7 +11,7 @@ SELECT
     SUM(od.Amount) AS TotalOrderValue
 FROM orderdetails_clean od
 GROUP BY od.`Order ID`;
-### **Output:**
+Output
 Order ID, TotalOrderValue
 B-25601	1429
 B-25602	3889
@@ -44,6 +44,13 @@ JOIN  orderdetails_clean od ON lo.`Order ID` = od.`Order ID`
 GROUP BY lo.CustomerName
 ORDER BY TotalSpent DESC
 LIMIT 5;
+Output
+CustomerName, TotalSpent
+'Yaanvi', '9177'
+'Pooja', '9030'
+'Abhishek', '8135'
+'Surabhi', '6889'
+'Soumya', '6869'
 -- Top Category by Sales
 SELECT 
     od.Category,
@@ -52,10 +59,21 @@ FROM orderdetails_clean od
 GROUP BY od.Category
 ORDER BY ProductSales DESC
 LIMIT 5;
+Output
+# Category, ProductSales
+'Clothing', '3516'
+'Electronics', '1154'
+'Furniture', '945'
 -- TotaL Profit BY Category
 SELECT SUM(Profit) as Total_Profit,Category
 FROM orderdetails_clean
 group by Category;
+Output
+ Total_Profit, Category
+'2298', 'Furniture'
+'11163', 'Clothing'
+'10494', 'Electronics'
+
 
 
 
