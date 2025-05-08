@@ -95,6 +95,7 @@ SELECT *
 FROM CustomerSpending
 WHERE rn <= 3;
  City, CustomerName, TotalSpent, rn
+Output
 'Ahmedabad', 'Gaurav', '3208', '1'
 'Ahmedabad', 'Trupti', '2017', '2'
 'Ahmedabad', 'Shardul', '1907', '3'
@@ -102,7 +103,21 @@ WHERE rn <= 3;
 'Allahabad', 'Seema', '5228', '2'
 'Allahabad', 'Vedant', '2208', '3'
 'Amritsar', 'Monu', '1246', '1'
-
+-- Monthly Sales Change
+WITH MonthlySales AS (
+    SELECT 
+        DATE_FORMAT(STR_TO_DATE(lo.`Order Date`, '%d-%m-%Y'), '%Y-%m') AS Month,
+        SUM(od.Amount) AS TotalSales
+    FROM listoforders_clean lo
+    JOIN orderdetails_clean od ON lo.`Order ID` = od.`Order ID`
+    GROUP BY Month
+)
+SELECT 
+    Month,
+    TotalSales,
+    LAG(TotalSales) OVER (ORDER BY Month) AS PrevMonthSales,
+    (TotalSales - LAG(TotalSales) OVER (ORDER BY Month)) AS SalesChange
+FROM MonthlySales;
 
 
 
