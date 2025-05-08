@@ -86,7 +86,7 @@ FROM orderdetails_clean
 GROUP BY Category;
 '''
 
-### 8. "*Category Contribution Compared to Total**
+### 8. **Category Contribution Compared to Total**
 This query calculates the total profit percentage  per product category.
 ```sql
 SELECT 
