@@ -114,6 +114,24 @@ FROM CustomerSpending
 WHERE rn <= 3;
 ```
 
+### 10.**Monthly Sales Change**
+```sql
+WITH MonthlySales AS (
+    SELECT 
+        DATE_FORMAT(STR_TO_DATE(lo.`Order Date`, '%d-%m-%Y'), '%Y-%m') AS Month,
+        SUM(od.Amount) AS TotalSales
+    FROM listoforders_clean lo
+    JOIN orderdetails_clean od ON lo.`Order ID` = od.`Order ID`
+    GROUP BY Month
+)
+SELECT 
+    Month,
+    TotalSales,
+    LAG(TotalSales) OVER (ORDER BY Month) AS PrevMonthSales,
+    (TotalSales - LAG(TotalSales) OVER (ORDER BY Month)) AS SalesChange
+FROM MonthlySales;
+```
+
 ## **Project Setup**
 
 ### 1. **Database Setup**
