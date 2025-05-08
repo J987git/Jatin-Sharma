@@ -84,7 +84,16 @@ SELECT
     Category
 FROM orderdetails_clean
 GROUP BY Category;
-```
+### 8. "*Category Contribution Compared to Total**
+```sql
+SELECT 
+    Category,
+    SUM(Profit) AS Category_Profit,
+    ROUND(100.0 * SUM(Profit) / SUM(SUM(Profit)) OVER(), 2) AS Profit_Percentage
+FROM orderdetails_clean
+GROUP BY Category;
+### Output Screenshot:
+![Sales Output](![Screenshot 2025-05-08 100204](https://github.com/user-attachments/assets/ac94f048-c64e-4090-8b48-c3fbf4a27242)
 
 ## **Project Setup**
 
