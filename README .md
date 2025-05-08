@@ -97,6 +97,23 @@ FROM orderdetails_clean
 GROUP BY Category;
 ```
 
+### 9. **Top 3 Customers by Spending per City**
+```sql
+WITH CustomerSpending AS (
+    SELECT 
+        lo.City,
+        lo.CustomerName,
+        SUM(od.Amount) AS TotalSpent,
+        ROW_NUMBER() OVER (PARTITION BY lo.City ORDER BY SUM(od.Amount) DESC) AS rn
+    FROM listoforders_clean lo
+    JOIN orderdetails_clean od ON lo.`Order ID` = od.`Order ID`
+    GROUP BY lo.City, lo.CustomerName
+)
+SELECT *
+FROM CustomerSpending
+WHERE rn <= 3;
+```
+
 ## **Project Setup**
 
 ### 1. **Database Setup**
