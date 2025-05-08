@@ -73,6 +73,15 @@ Output
 '2298', 'Furniture'
 '11163', 'Clothing'
 '10494', 'Electronics'
+-- Category Contribution Compared to Total
+SELECT 
+    Category,
+    SUM(Profit) AS Category_Profit,
+    ROUND(100.0 * SUM(Profit) / SUM(SUM(Profit)) OVER(), 2) AS Profit_Percentage
+FROM orderdetails_clean
+GROUP BY Category;
+
+
 
 
 
