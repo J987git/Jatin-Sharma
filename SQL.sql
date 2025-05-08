@@ -94,6 +94,14 @@ WITH CustomerSpending AS (
 SELECT *
 FROM CustomerSpending
 WHERE rn <= 3;
+ City, CustomerName, TotalSpent, rn
+'Ahmedabad', 'Gaurav', '3208', '1'
+'Ahmedabad', 'Trupti', '2017', '2'
+'Ahmedabad', 'Shardul', '1907', '3'
+'Allahabad', 'Pooja', '5809', '1'
+'Allahabad', 'Seema', '5228', '2'
+'Allahabad', 'Vedant', '2208', '3'
+'Amritsar', 'Monu', '1246', '1'
 
 
 
