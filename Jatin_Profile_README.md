@@ -4,17 +4,17 @@
 
 ---
 
-🌟 I’m passionate about transforming raw data into meaningful insights. I enjoy solving complex business problems through data visualization, dashboarding, and storytelling.
+ I’m passionate about transforming raw data into meaningful insights. I enjoy solving complex business problems through data visualization, dashboarding, and storytelling.
 
-💻 Currently building a strong portfolio in:
-- 📊 Business Intelligence with Power BI
-- 🐍 Data Analysis using Python (Pandas, Matplotlib, Seaborn)
-- 💾 Data Manipulation using MySQL
-- 📋 Data Cleaning & Preprocessing using Excel and SQL
+ Currently building a strong portfolio in:
+-  Business Intelligence with Power BI
+-  Data Analysis using Python (Pandas, Matplotlib, Seaborn)
+-  Data Manipulation using MySQL
+-  Data Cleaning & Preprocessing using Excel and SQL
 
 ---
 
-### 🧠 My Projects
+###  My Projects
 
 | 🔍 Project | 🛠️ Tools | 🔗 Link |
 |-----------|----------|--------|
@@ -25,7 +25,7 @@
 
 ---
 
-### 🛠️ Skills
+###  Skills
 
 - **Languages:** SQL, Python
 - **Tools:** Power BI, Excel, Jupyter Notebook, MySQL Workbench
@@ -33,7 +33,7 @@
 
 ---
 
-### 📬 Let's Connect
+###  Let's Connect
 
 <p>
   <a href="https://linkedin.com/in/jatinsharma" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin" /></a>
