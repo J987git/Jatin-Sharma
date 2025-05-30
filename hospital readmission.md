@@ -69,3 +69,12 @@ Edit
 - Adding features like `number_inpatient` and `number_emergency` improved prediction performance.
 - Logistic Regression outperformed Random Forest slightly in accuracy and precision.
 - Class balancing helped reduce bias toward the majority class.
+ ---
+  ## Summary
+
+After enhancing the feature set and handling class imbalance using `class_weight='balanced'`, the model performance significantly improved. The logistic regression model achieved an **accuracy of 60%**, with an **F1-score of 51% for readmitted patients**, a large improvement from the earlier performance.
+
+Adding medically relevant features like `number_inpatient`, `number_emergency`, and `time_in_hospital` contributed to better prediction power. These features helped the model capture important patterns related to patient health and hospitalization history.
+
+The model is now better equipped to **identify patients at risk of readmission**, which can assist healthcare providers in **targeting interventions** and ultimately **improving patient outcomes**.
+
