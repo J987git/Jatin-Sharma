@@ -192,10 +192,3 @@ ORDER BY consecutive_increases DESC;
 ```
 
 ---
-
-## 📬 Contact
-
-**Jatin Sharma**  
-[📧 Email](mailto:jatinsharma@email.com) • [🔗 LinkedIn](https://www.linkedin.com/in/jatinsharma) • [💻 Portfolio](https://github.com/J987git)
-
-> **Note**: All data used here is for educational/portfolio purposes only.
