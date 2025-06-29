@@ -158,16 +158,10 @@ GROUP BY director_name
 HAVING MAX(CASE WHEN average_rating < prev_rating THEN 1 ELSE 0 END) = 0;
 ```
 
----
 
-## 📌 Author
 
-**Jatin Sharma**  
-Aspiring Data Analyst | SQL Enthusiast  
-Connect with me on [LinkedIn](https://linkedin.com)
 
----
 
-## 📎 License
 
-This dataset is synthetically generated for learning purposes. No real movie data is included.
+
+
