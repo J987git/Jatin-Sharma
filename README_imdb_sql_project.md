@@ -5,11 +5,11 @@ This project is based on a synthetic IMDb-style dataset containing 100,000+ rows
 
 ---
 
-## 📊 Dataset Overview
+
 
 - **Rows**: 100,000
 - **Columns**: 16
-- **Generated using**: Python (Pandas + NumPy)
+  
 - **File**: `imdb_large_100k.csv`
 
 ---
