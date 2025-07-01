@@ -7,7 +7,7 @@ This project is based on a synthetic IMDb-style dataset containing 100,000+ rows
 
 
 
-- **Rows**: 100,000
+
 - **Columns**: 16
   
 - **File**: `imdb_large_100k.csv`
