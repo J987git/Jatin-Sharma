@@ -134,14 +134,6 @@ Analyzed how variables like price, revenue, and loyalty are related.
 
 ---
 
-## 🙋‍♂️ Author
 
-**Jatin Sharma**  
-📧 Data Analyst | Python | SQL | Power BI  
-📌 *Self-starter who builds data when it doesn't exist*
 
----
 
-## 📎 License
-
-This project is open-source and free to use for learning purposes.
