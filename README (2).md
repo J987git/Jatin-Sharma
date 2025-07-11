@@ -90,31 +90,6 @@ Analyzed how variables like price, revenue, and loyalty are related.
 
 ---
 
-## 🚀 How to Run
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/yourusername/pharma-doctor-analysis.git
-   cd pharma-doctor-analysis
-   ```
-
-2. Install dependencies:
-   ```bash
-   pip install pandas sqlalchemy matplotlib seaborn
-   ```
-
-3. Run the ingestion script:
-   ```bash
-   python ingestion_script.py
-   ```
-
-4. Open the Jupyter notebook to explore analysis:
-   ```bash
-   jupyter notebook doctors_summary_analysis.ipynb
-   ```
-
----
-
 ## 📈 Sample Visualizations
 
 - Revenue distribution by specialization
